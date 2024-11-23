@@ -1,0 +1,174 @@
+/* Reset e Fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaço entre logo, links e perfil */
+    align-items: center;           /* Centraliza tudo verticalmente */
+    padding: 15px 30px;
+    background-color: #ffffff;    /* Fundo branco */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais visível */
+    position: sticky;              /* Menu fixo ao rolar a página */
+    top: 0;
+    z-index: 10;
+}
+
+#logo {
+    height: 50px;
+    max-width: 100%;
+    cursor: pointer; /* Adiciona cursor de mão para interatividade */
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;                   /* Cor cinza suave */
+    font-size: 18px;
+    font-weight: 500;              /* Deixa os links mais marcados */
+    margin-left: 25px;
+    transition: color 0.3s;        /* Animação suave no hover */
+}
+
+nav a:hover {
+    color: #028A0F;                /* Cor de destaque ao passar o mouse */
+    text-shadow: 0px 0px 5px rgba(2, 138, 15, 0.5); /* Brilho no hover */
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;                     /* Espaço entre texto e imagem */
+}
+
+.perfil img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid #028A0F;     /* Adiciona borda verde */
+}
+
+/* Sobre Nós */
+#sobre {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F4F9F4;     /* Fundo suave */
+}
+
+#sobre h1 {
+    font-size: 42px;
+    color: #028A0F;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1); /* Pequeno destaque */
+}
+
+#sobre p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;                /* Centraliza texto no container */
+}
+
+/* Time */
+#time {
+    font-size: 32px;
+    text-align: center;
+    color: #028A0F;
+    margin: 40px 0 20px 0;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#participantes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;                     /* Espaçamento entre os cards */
+}
+
+#participantes div {
+    text-align: center;
+    background-color: #ffffff;     /* Fundo branco */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 260px;                  /* Define tamanho fixo nos cards */
+}
+
+#participantes div:hover {
+    transform: translateY(-5px);   /* Leve "levantar" ao passar o mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container h3 {
+    font-size: 22px;
+    color: #028A0F;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #028A0F;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #E8F5E9;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .perfil {
+        margin-top: 15px;
+    }
+
+    #participantes {
+        flex-direction: column;    /* Cards empilhados em telas menores */
+        align-items: center;
+    }
+}
