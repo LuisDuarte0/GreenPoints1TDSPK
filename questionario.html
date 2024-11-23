@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-questionario.css">
+    <title>Questionário GreenPoints</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <a href="index.html">
+                <img src="../img/logo-greenpoints.png" alt="logo" id="logo">
+            </a>
+            <ul id="menu">
+                <li class="opcoes">
+                    <a href="artigos.html">Artigos</a>
+                </li>
+
+                <li class="opcoes">
+                    <a href="sobre-nos.html">Sobre Nós</a>
+                </li>
+                <li class="opcoes">
+                    <a href="questionario.html">Questionário</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="linha"></div>
+        <section class="questionario">
+            <div class="titulo">
+                <h1>Questionário GreenPoints</h1>
+                <hr>
+                <p>Responda às perguntas abaixo para calcular sua pontuação e descobrir os benefícios disponíveis para você!</p>
+            </div>
+            <form action="#" method="POST" id="form-questionario">
+                <!-- Pergunta 1 -->
+                <div class="pergunta">
+                    <label for="renda">1. Qual é a sua renda familiar mensal?</label>
+                    <select name="renda" id="renda" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="menos2000">Menor que R$2.000</option>
+                        <option value="entre2000e8000">Entre R$2.001 e R$8.000</option>
+                        <option value="mais8000">Maior que R$8.001</option>
+                    </select>
+                </div>
+                <!-- Pergunta 2 -->
+                <div class="pergunta">
+                    <label for="residencia">2. Quantas pessoas moram na mesma residência?</label>
+                    <input type="number" name="residencia" id="residencia" min="1" required placeholder="Exemplo: 3">
+                </div>
+                <!-- Pergunta 3 -->
+                <div class="pergunta">
+                    <label for="escolaridade">3. Qual é o grau de escolaridade do solicitante?</label>
+                    <select name="escolaridade" id="escolaridade" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="fundamental">Ensino Fundamental</option>
+                        <option value="medio">Ensino Médio</option>
+                        <option value="superior">Ensino Superior</option>
+                    </select>
+                </div>
+                <!-- Pergunta 4 -->
+                <div class="pergunta">
+                    <label for="imovel">4. Qual é o tipo do imóvel em que você mora?</label>
+                    <select name="imovel" id="imovel" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="alugado">Alugado</option>
+                        <option value="proprio">Próprio</option>
+                    </select>
+                </div>
+                <!-- Botão de envio -->
+                <div class="enviar">
+                    <button type="submit" id="btn-enviar">Enviar Respostas</button>
+                </div>
+            </form>
+        </section>
+        <div class="linha"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GreenPoints - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
